@@ -25,7 +25,7 @@ A program that when run via the command line generates a dynamic professional RE
 
 ## Usage 
 
-![Video of the program in use](https://drive.google.com/file/d/1MJfjjq4Q4Kd2FZkdUt0UCoa0ClWT-D3i/view?usp=sharing)
+[Link: Video](https://drive.google.com/file/d/1MJfjjq4Q4Kd2FZkdUt0UCoa0ClWT-D3i/view?usp=sharing)
 
 * Enter 'node app' in this program's directory after following the instructions in [Installation](#installation).
 * Enter information into the prompts as they appear. 
