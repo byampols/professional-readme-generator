@@ -4,7 +4,7 @@
 
 A program that when run via the command line generates a dynamic professional README.
 
-[Github  Source Repository](https://github.com/byampols/weather-dashboard).
+[Github  Source Repository](https://github.com/byampols/professional-readme-generator).
 
 ## Table of Contents
 
