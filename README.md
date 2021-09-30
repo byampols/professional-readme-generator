@@ -38,7 +38,7 @@ A program that when run via the command line generates a dynamic professional RE
 
 ## Credits <!--don't use this in the actual thing-->
 
-* 
+* [lukas-h's license-badges.md](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 ## Tests 
 
@@ -49,4 +49,17 @@ A program that when run via the command line generates a dynamic professional RE
 ### [My github profile.](https://github.com/byampols)
 ### [Email me if you have any questions!](byampols@alumni.cmu.edu)
 
-
+<!--
+const data = {
+    title: 'professional-readme-generator', //required
+    description: 'A program that when run via the command line generates a dynamic professional README.',
+    source: 'https://github.com/byampols/weather-dashboard',
+    installation: ['Clone or download the repository from github.', 'Open the command line and navigate to the cloned directory.', 'Use "node -v" to check that node is installed, if it is not, install node.', 'Enter "npm install" to install required node modules.', 'Enter "node app" to run the application.'],
+    usage: ["Enter 'node app' in this program's directory after following the instructions in [Installation](#installation).","Enter information into the prompts as they appear. At the end, a README file containing the entered information will be generated in the 'dist' folder. "],
+    license: 'MIT License',
+    contributors: ["Ben Yampolsky"],
+    tests: "",
+    profile: "https://github.com/byampols", //required
+    email: "byampols@alumni.cmu.edu" //required
+};
+-->

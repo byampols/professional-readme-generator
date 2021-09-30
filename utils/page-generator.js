@@ -1,18 +1,8 @@
+//require list of licenses with badges
+const licenses = require("../src/licenses");
+
 //list of sections
 const itemArr = ["title", "description", "table", "installation", "usage", "license", "contributors", "tests"];
-
-data = {
-    title: 'professional-readme-generator', //required
-    description: 'A program that when run via the command line generates a dynamic professional README.',
-    source: 'https://github.com/byampols/weather-dashboard',
-    installation: ['Clone or download the repository from github.', 'Open the command line and navigate to the cloned directory.', 'Use "node -v" to check that node is installed, if it is not, install node.', 'Enter "npm install" to install required node modules.', 'Enter "node app" to run the application.'],
-    usage: ["Enter 'node app' in this program's directory after following the instructions in [Installation](#installation).","Enter information into the prompts as they appear. At the end, a README file containing the entered information will be generated in the 'dist' folder. "],
-    license: 'MIT License',
-    contributors: ["Ben Yampolsky"],
-    tests: "",
-    profile: "https://github.com/byampols", //required
-    email: "byampols@alumni.cmu.edu" //required
-};
 
 //capitolize the first letter of a string
 const capitolize = (string) => {
@@ -25,7 +15,6 @@ const createListString = (array) => {
     if (typeof array === 'string') {
         return `${array}\n`;
     }
-    console.log(array);
     //for each member of the list, add a bullet to the string
     string = ``;
     array.forEach(element => {
@@ -50,7 +39,8 @@ const stringCreator = (data, stringObj, n, segment) => {
     } else {
         //check if this is the license (since that needs an alternate format), if not generate the standard format
         if (segment === "license") {
-            stringObj[segment] = `## ${capitolize(segment)}\n${sourceCreator("LICENSE", data.license)}`;
+            stringObj.description += `\n${licenses[data.license].badge}\n`
+            stringObj[segment] = `## ${capitolize(segment)}\n${sourceCreator(licenses[data.license].link, data.license)}`;
         } else {
             stringObj[segment] = `## ${capitolize(segment)}\n${createListString(data[segment])}`;   
         }
@@ -96,7 +86,7 @@ const generatePage = (data) => {
     //add questions to table of contents
     stringObj.table += `${n}. [Questions](#questions)\n`;
     
-    let readmeString = stringAppender(stringObj) + `## Questions\n###[My github profile.](${data.profile})\n### [Email me if you have any questions!](${data.email})`;
+    let readmeString = stringAppender(stringObj) + `## Questions\n###[My github profile.](https://github.com/${data.profile})\n### [Email me if you have any questions!](${data.email})`;
     return readmeString;
 };
 
