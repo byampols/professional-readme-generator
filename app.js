@@ -237,25 +237,11 @@ promptUser()
     .then(promptInstallation)
     .then(promptUsage)
     .then(promptContributors)
+    .then(pageString => {
+        return writeFile(pageString);
+    })
     .then(writeFileResponse => {
         console.log(writeFileResponse);
         }).catch(err => {
             console.log(err);
         });
-
-/*
-promptUser() //title, description, source, license, tests, profile, email
-    .then(promptInstallation())
-    .then(promptUsage())
-    .then(promptContributors())
-    .then(data => {
-        console.log(data);
-        return generatePage(data);
-    }).then(pageString => {
-        return writeFile(pageString);
-    }).then(writeFileResponse => {
-        console.log(writeFileResponse);
-    }).catch(err => {
-        console.log(err);
-    });
-*/
