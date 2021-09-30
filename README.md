@@ -2,50 +2,51 @@
 
 ## Description 
 
-A weather dashboard which takes a place name and displays current and future weather conditions.
+A program that when run via the command line generates a dynamic professional README.
 
-Source: [github repository](https://github.com/byampols/weather-dashboard).
-
-Deployed application: [the deployed application](https://byampols.github.io/weather-dashboard/).
+[Github  Source Repository](https://github.com/byampols/weather-dashboard).
 
 ## Table of Contents
 
-1. [Usage](#usage)
-2. [License](#license)
-3. [Contributors](#contributors)
-3. [Tests](#tests)
-3. [Questions](#questions)
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributors](#contributors)
+5. [Tests](#tests)
+6. [Questions](#questions)
+
+## Installation
+
+1. Clone or download the repository from github.
+2. Open the command line and navigate to the cloned directory.
+3. Use 'node -v' to check that node is installed, if it is not, install node.
+4. Enter 'npm install' to install required node modules.
+5. Enter 'node app' to run the application.
 
 ## Usage 
 
-![The Dashboard](assets/images/screenshot.png)
+* Enter 'node app' in this program's directory after following the instructions in [Installation](#installation).
+* Enter information into the prompts as they appear. At the end, a README file containing the entered information will be generated in the 'dist' folder. 
 
-* When a place is entered into the search field, it will display a dashboard with weather information for that location.
-    * This is done using a weather and geocoding api. 
-        * The geocoding api takes the location name, and forwards the latitude and longitude to the weather api
-    * The dashboard diplays the chosen location, the current date, temperature, wind, and UV Index, as well as a 5 day forecast
-    * The UV index is highlighted in colors to demonstrate severity 
-        * Green is safe, yellow is a warning, red is a high uv index, and black is dangerously high
-    * The icons featured represent the weather. Clouds represent cloudy, the orange circle represents sunny, etc.
-* Your search history is saved in the sidebar, which will track the last 8 searches you made
-    * You can reopen those dashboards by clicking a name in the search history
+## License 
 
-## License <a name="license"></a>
+[MIT License](LICENSE)
 
-[Creative Commons License](LICENSE)
+## Contributors 
 
-## Contributors <a name="contributors"></a>
+* Ben Yampolsky
 
-* [jQuery](https://jquery.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Popper](https://popper.js.org/)
-* [moment.js](https://momentjs.com/)
-* [Opencagedata's geocoding api](https://opencagedata.com/)
-* [Openweather api](https://openweathermap.org)
+## Credits <!--don't use this in the actual thing-->
 
-## Tests <a name="tests"></a>
+* 
 
-## Questions <a name="questions"></a>
+## Tests 
 
+
+
+## Questions 
+
+### [My github profile.](https://github.com/byampols)
+### [Email me if you have any questions!](byampols@alumni.cmu.edu)
 
 
