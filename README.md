@@ -25,8 +25,11 @@ A program that when run via the command line generates a dynamic professional RE
 
 ## Usage 
 
+![Video of the program in use](https://drive.google.com/file/d/1MJfjjq4Q4Kd2FZkdUt0UCoa0ClWT-D3i/view?usp=sharing)
+
 * Enter 'node app' in this program's directory after following the instructions in [Installation](#installation).
-* Enter information into the prompts as they appear. At the end, a README file containing the entered information will be generated in the 'dist' folder. 
+* Enter information into the prompts as they appear. 
+* A README file containing the entered information will be generated in the 'dist' folder. 
 
 ## License 
 
